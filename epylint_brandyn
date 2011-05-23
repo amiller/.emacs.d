@@ -4,7 +4,9 @@ import subprocess
 
 # Ignore E203: Because of a[inds, :] for numpy arrays
 # Ignore E225: Because of a = np.array([[-.5, -.5, -.5]])
-subprocess.call(['pep8'] + sys.argv[1:] + ['--ignore=E203,E225'])
+# Ignore E231: Because of a = b,c,d
+# Ignore E701: Because of if flag: doit()
+subprocess.call(['pep8'] + sys.argv[1:] + ['--ignore=E203,E225,E231,E70'])
 subprocess.call(['pyflakes'] + sys.argv[1:])
 
 sys.exit(0)
