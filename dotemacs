@@ -84,3 +84,7 @@
 
 ;; Coq
 (global-set-key (kbd "C-c C-j") 'proof-goto-point)
+
+;; Html with inline javascript
+(require 'aspx-mode)
+(add-to-list 'auto-mode-alist '("\\.html\\'" . aspx-mode))
