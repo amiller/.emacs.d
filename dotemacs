@@ -40,7 +40,7 @@
 
 ;; From here http://www.rwdev.eu/articles/emacspyeng
 (require 'pycomplete)
-(setq auto-mode-alist (cons '("\\.py$" . python-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.pyx?$" . python-mode) auto-mode-alist))
 (autoload 'python-mode "python-mode" "Python editing mode." t)
 (autoload 'pymacs-load "pymacs" nil t)
 (autoload 'pymacs-eval "pymacs" nil t)
