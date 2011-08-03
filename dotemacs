@@ -88,3 +88,4 @@
 ;; Html with inline javascript
 (require 'aspx-mode)
 (add-to-list 'auto-mode-alist '("\\.html\\'" . aspx-mode))
+(setq-default indent-tabs-mode nil)
